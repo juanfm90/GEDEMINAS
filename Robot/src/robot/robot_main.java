@@ -13,23 +13,23 @@ public class robot_main {
 		Thread.sleep(5000);
 		
 		// Ejemplo right clic
-		rightbut Mouse_Event = new rightbut();
-		Mouse_Event.single_action();
-		Thread.sleep(5000);
+		//rightbut Mouse_Event = new rightbut();
+		//Mouse_Event.single_action();
+		//Thread.sleep(5000);
 		
 	 	// Ejemplo left clic
-		leftbut Mouse_Event2 = new leftbut();
-		Mouse_Event2.single_action();
-		Thread.sleep(5000);
+		//leftbut Mouse_Event2 = new leftbut();
+		//Mouse_Event2.single_action();
+		//Thread.sleep(5000);
 	
 		// Ejemplo mover raton (x,y)
-		moveto Mouse_Event3 = new moveto();
-		Mouse_Event3.single_action();
-		Thread.sleep(5000);
+		//moveto Mouse_Event3 = new moveto();
+		//Mouse_Event3.single_action();
+		//Thread.sleep(5000);
 		
 		// Ejemplo escritura
 		writeto Keyboard_Event = new writeto();
-		Keyboard_Event.single_action("ababbb");
+		Keyboard_Event.single_action("juanfranco");
 	
 		Thread.sleep(5000);
 		
