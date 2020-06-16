@@ -31,7 +31,15 @@ public class writeto {
         robot.delay(2000);
         
     	int[] teclass = new int[]{0,0,0,0,0,0,0,0,0,0};
-    	System.out.println(cadena.toString());
+    	//System.out.println(cadena.toString());
+    	
+    	if (cadena.equals("ENTER")) {
+			System.out.println("Typing ENTER...");
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			robot.delay(250);
+    	} else {
+    		
     	
     	for (int i = 0; i < cadena.length(); i++) { 
     		char character = cadena.charAt(i); 
@@ -187,9 +195,15 @@ public class writeto {
     				robot.keyRelease(KeyEvent.VK_Z);
     				robot.delay(250);
     				break; 
-    			
-    			default:System.out.println("ERROR! Character not defined");;break;
+    			case ' ': 
+    				System.out.println("Typing space...");
+    				robot.keyPress(KeyEvent.VK_SPACE);
+    				robot.keyRelease(KeyEvent.VK_SPACE);
+    				robot.delay(250);
+    				break; 
+    			default:System.out.println("ERROR! Character not defined "+character);;break;
     		}
+    	}
     	}
     	
 

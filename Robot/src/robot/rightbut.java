@@ -6,7 +6,7 @@ import java.awt.event.InputEvent;
 
 public class rightbut {
 	public rightbut() {
-		// Constructor
+		// Constructor 
 		System.out.println("Implementing right butt");
 	}
 	public void single_action () throws AWTException {
